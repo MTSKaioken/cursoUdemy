@@ -5,15 +5,14 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import br.com.spring.cursoUdemy.domain.Categoria;
+import br.com.spring.cursoUdemy.domain.Produto;
 
 // OU DAO
-import org.springframework.context.annotation.Profile;
 
 @Repository												// OBJ		  IDENTIFICADOR
-public interface CategoriaRepository extends JpaRepository<Categoria, Integer>{
+public interface ProdutoRepository extends JpaRepository<Produto, Integer>{
 
 	
-	Optional<Categoria> findById(Integer id);
+	Optional<Produto> findById(Integer id);
 	
 }
